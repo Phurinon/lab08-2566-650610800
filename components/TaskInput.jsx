@@ -1,9 +1,11 @@
-export const Task = (props) => {
+export const TaskInput = () => {
   return (
-    <div className="d-flex p-3 gap-2 align-items-center border-bottom">
-      <span>{props.title}</span>
-      <button className="btn btn-success">Done</button>
-      <button className="btn btn-danger">Delete</button>
+    <div className="d-flex gap-1">
+      <input
+        className="form-control"
+        placeholder="Insert a task here.."
+      ></input>
+      <button className="btn btn-primary">Add </button>
     </div>
   );
 };
